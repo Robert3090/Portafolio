@@ -206,7 +206,7 @@ i {
 }
 
 .contact {
-    height: 600px;
+    height: 610px;
     background-image: url("/imgs/montañas.jpg");
     background-size: cover;
     background-position: center;
@@ -215,7 +215,7 @@ i {
 
 .contact_filter {
     width: 100%;
-    height: 100%;
+    height: 101%;
     margin: auto;
     background: linear-gradient(to bottom, black, transparent);
 }
@@ -349,7 +349,7 @@ i {
     text-align: center;
     width: 100%;
     height: 30px;
-    margin-top: 30px;
+    margin: 30px 0px;
 }
 
 .resolucion {
@@ -378,8 +378,8 @@ i {
     background-color: rgb(104, 103, 103, 0.5);
 }
 
-@media  screen and (max-width: 768px){
-    body {
+@media  screen and (max-width: 576px){
+    body, html {
         overflow-x: hidden;
     }
 
@@ -393,7 +393,7 @@ i {
     }
 
     .desplazamiento {
-        left: 60%;
+        left: 20%;
     }
 
     .navbar {
@@ -432,11 +432,31 @@ i {
     }
 
     .presentation_resume {
-        width: 75%;
-        padding: 10px;
+        width: 90%;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .about {
+        width: 100%;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .about_resume {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .experience {
+        width: 100%;
+        margin: 60px 0px;
     }
 
     .experience_grid {
+        width: 100%;
+        margin: 0px;
+        padding: 20px;
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }
@@ -465,11 +485,23 @@ i {
         background-color: #c28823;
     }
 
+    .portfolio {
+        margin: 70px 0px;
+    }
+
+    .portfolio > p {
+        margin: 10px 0px;
+    }
+
     .card_container {
         display: flex;
         flex-direction: column;
         align-content: space-between;
         width: 90%;
+    }
+
+    .card_description {
+        padding-top: 290px;
     }
 
     .card {
@@ -486,23 +518,10 @@ i {
     }
 
     .contact {
-        height: 750px;
+        height: 830px;
     }
 
     .contact_title {
         font-size: 40px;
-    }
-}
-
-@media  screen and (min-width: 769px) and (max-width: 991px) {
-    .btn-menu {
-        display: none;
-    }
-
-    .navbar > ul {
-        display: flex;
-        align-items: center;
-        padding: 0px;
-        margin: auto;
     }
 }
