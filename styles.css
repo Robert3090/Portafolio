@@ -401,6 +401,10 @@ i {
         overflow-y: hidden;
     }
 
+    .resolucion {
+        display: none;
+    }
+
     .desplazamiento {
         left: 40%;
     }
@@ -467,10 +471,16 @@ i {
 
     .experience_grid {
         width: 100%;
+        height: auto;
         margin: 0px;
         padding: 20px;
         grid-template-columns: 1fr;
+        grid-template-rows: 1fr; 
         grid-row-gap: 20px;
+    }
+
+    .experience_grid_item {
+        height: 100%;
     }
 
     .experience_grid_item:first-child {
