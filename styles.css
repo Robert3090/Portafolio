@@ -392,14 +392,23 @@ i {
         transition-timing-function: ease-in-out;
     }
 
+    :root {
+        --color-primario: #0070ff;
+        scroll-behavior: auto;
+    }
+
+    .noScroll {
+        overflow-y: hidden;
+    }
+
     .desplazamiento {
-        left: 20%;
+        left: 40%;
     }
 
     .navbar {
         position: fixed;
         top: 0;
-        left: -60%;
+        left: 0%;
         width: 60%;
         height: 100vh;
         margin: 0px;
@@ -409,7 +418,7 @@ i {
     }
 
     .navbar-hidden {
-        left: 0%;
+        left: -60%;
     }
 
     .navbar > ul {
@@ -423,6 +432,7 @@ i {
         display: inline-block;
         width: 100%;
         height: 900px;
+        background-attachment: local;
     }
 
     .presentation_photo {
@@ -435,6 +445,7 @@ i {
         width: 90%;
         padding: 5px;
         text-align: center;
+        font-size: 20px;
     }
 
     .about {
@@ -451,6 +462,7 @@ i {
     .experience {
         width: 100%;
         margin: 60px 0px;
+        padding-top: 30px;
     }
 
     .experience_grid {
@@ -487,6 +499,7 @@ i {
 
     .portfolio {
         margin: 70px 0px;
+        padding-top: 30px;
     }
 
     .portfolio > p {
@@ -518,10 +531,19 @@ i {
     }
 
     .contact {
-        height: 830px;
+        height: 100vh;
+        padding-top: -2px;
     }
 
     .contact_title {
         font-size: 40px;
+    }
+
+    .contact_message {
+        padding-top: 30px;
+    }
+
+    .contact_info {
+        margin: 20px;
     }
 }
