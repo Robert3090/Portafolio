@@ -2,7 +2,7 @@
 let caja = document.getElementById('ress');
 let ancho = window.innerWidth;
 let alto = window.innerHeight;
-caja.innerHTML = `w: ${ancho} h: ${alto}`;
+/*caja.innerHTML = `w: ${ancho} h: ${alto}`;*/
 
 
 
