@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0070ff"> <!--cambia el color de la pestania del navegador-->
     <link rel="shortcut icon" href="/imgs/term-removebg-preview.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Almarai&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
     <title>¡Hola! Soy Roberto M.</title>
 </head>
 <body>
@@ -25,11 +26,11 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
-
+<!--
         <div class="resolucion">
             <p id="ress"></p>
         </div>
-
+-->
 
        <section class="portada" id="home">
             <div class="portada_filter">
@@ -51,7 +52,7 @@
             </div>
         </section>
 
-       <section class="about"  id="portada">
+       <section class="about"  id="portada" data-aos="fade-up" data-aos-duration="3000">
             <p class="about_title">Acerca de mi</p>
             <p class="about_resume">
                 Soy estudiante de programación en Academlo con sólidos conocimientos en HTML5,
@@ -62,7 +63,7 @@
             <img src="/imgs/logo_academlo 5.png" alt="">
         </section>
 
-        <section class="experience"  id="experience">
+        <section class="experience"  id="experience" data-aos="fade-up" data-aos-duration="3000">
             <p class="about_title">Mis habilidades y experiencia</p>
             <div class="experience_grid">
                 <div class="experience_grid_item">
@@ -104,7 +105,7 @@
             </div>
         </section>
 
-        <section class="portfolio" id="portafolio">
+        <section class="portfolio" id="portafolio" data-aos="fade-up" data-aos-duration="3000">
             <p class="about_title">Portafolio</p>
             <div class="card_container">
                 <div class="card">
@@ -119,7 +120,7 @@
             </div>
         </section>
  
-        <section class="contact" id="contacto">
+        <section class="contact" id="contacto"data-aos="fade-up" data-aos-duration="3000">
             <div class="contact_filter">
                 <div class="contact_message">
                     <p class="contact_title">¡Trabajemos juntos en tu siguiente proyecto!</p>
@@ -143,5 +144,9 @@
     </main>
   
     <script src="/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

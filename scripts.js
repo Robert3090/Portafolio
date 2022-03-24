@@ -12,20 +12,25 @@ let mainBody = document.querySelector("main"); //este el el contenido de la web
 let link = document.getElementsByTagName("li"); //obtenemos los elementos de la lista
 let body = document.querySelector("html");
 
-if(ancho < 576){
+if(ancho >= 576){
+    menu.removeChild(btnmenu);
+}
+
+if (ancho < 576) {
+    
     menu.classList.add("navbar-hidden");
-}
 
-for(let i = 0; i<link.length;i++){
-    link[i].addEventListener('click', (e) => {  
+    for(let i = 0; i<link.length;i++){
+        link[i].addEventListener('click', (e) => {  
+            menu.classList.toggle("navbar-hidden");
+            body.classList.remove("noScroll");
+        });
+    }
+    
+    
+    btnmenu.onclick = () => {
         menu.classList.toggle("navbar-hidden");
-        body.classList.remove("noScroll");
-    });
-}
-
-
-btnmenu.onclick = () => {
-    menu.classList.toggle("navbar-hidden");
-    mainBody.classList.toggle("desplazamiento");
-    body.classList.toggle("noScroll");
+        mainBody.classList.toggle("desplazamiento");
+        body.classList.toggle("noScroll");
+    }
 }
